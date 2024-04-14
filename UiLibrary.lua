@@ -203,6 +203,7 @@ local Themes = {
         NotificationColor = Color3.fromRGB(30, 30, 30),
         NotificationUIStrokeColor = Color3.fromRGB(50, 50, 50)
     },
+    --[[
     ['Kiriot'] = {
         BackgroundColor = Color3.fromRGB(28, 36, 51),
         SidebarColor = Color3.fromRGB(25, 29, 43),
@@ -216,7 +217,7 @@ local Themes = {
         PromptColor = Color3.fromRGB(21, 22, 33),
         NotificationColor = Color3.fromRGB(25, 25, 25),
         NotificationUIStrokeColor = Color3.fromRGB(28, 36, 51)
-    },
+    },]]
 }
 
 -- // Utility Functions
