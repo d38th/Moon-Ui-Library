@@ -352,7 +352,7 @@ do
                     AnchorPoint = Vector2.new(1, 1)
                 }, {
                     Utility:Create('UICorner', {
-                        CornerRadius = UDim.new(0, 15),
+                        CornerRadius = UDim.new(0, 7),
                         Name = 'NotificationCorner'
                     }),
                     Utility:Create('UIStroke', {
@@ -527,7 +527,7 @@ do
                     }),
                     Utility:Create('UICorner', {
                         Name = Title..'ButtonCorner',
-                        CornerRadius = UDim.new(0, 15)
+                        CornerRadius = UDim.new(0, 7)
                     })
                 })
             })
@@ -548,7 +548,7 @@ do
             task.wait(0.25)
             Utility:Tween(PromptFrame, {BackgroundTransparency = NotificationTransparency}, 0.25)
             Utility:Tween(PromptFrame, {Size = UDim2.new(0, 300, 0, 150)}, 0.25)
-            Utility:Tween(PromptFrameCorner, {CornerRadius = UDim.new(0, 15)}, 0.25)
+            Utility:Tween(PromptFrameCorner, {CornerRadius = UDim.new(0, 7)}, 0.25)
             task.wait(0.25)
             Utility:Tween(ButtonStroke, {Thickness = 1}, 0.25)
             task.wait(0.25)
@@ -664,7 +664,7 @@ do
                     }),
                     Utility:Create('UICorner', {
                         Name = Title..'ButtonCorner',
-                        CornerRadius = UDim.new(0, 15)
+                        CornerRadius = UDim.new(0, 7)
                     })
                 })
             })
@@ -685,7 +685,7 @@ do
             task.wait(0.25)
             Utility:Tween(PromptFrame, {BackgroundTransparency = NotificationTransparency0}, 0.25)
             Utility:Tween(PromptFrame, {Size = UDim2.new(0, 300, 0, 150)}, 0.25)
-            Utility:Tween(PromptFrameCorner, {CornerRadius = UDim.new(0, 15)}, 0.25)
+            Utility:Tween(PromptFrameCorner, {CornerRadius = UDim.new(0, 7)}, 0.25)
             task.wait(0.25)
             Utility:Tween(ButtonStroke, {Thickness = 1}, 0.25)
             task.wait(0.25)
@@ -804,7 +804,7 @@ do
                     }),
                     Utility:Create('UICorner', {
                         Name = Title..'Button1Corner',
-                        CornerRadius = UDim.new(0, 15)
+                        CornerRadius = UDim.new(0, 7)
                     })
                 }),
                 Utility:Create('TextButton', {
@@ -833,7 +833,7 @@ do
                     }),
                     Utility:Create('UICorner', {
                         Name = Title..'Button2Corner',
-                        CornerRadius = UDim.new(0, 15)
+                        CornerRadius = UDim.new(0, 7)
                     })
                 })
             })
@@ -856,7 +856,7 @@ do
             task.wait(0.25)
             Utility:Tween(PromptFrame, {BackgroundTransparency = NotificationTransparency}, 0.25)
             Utility:Tween(PromptFrame, {Size = UDim2.new(0, 300, 0, 150)}, 0.25)
-            Utility:Tween(PromptFrameCorner, {CornerRadius = UDim.new(0, 15)}, 0.25)
+            Utility:Tween(PromptFrameCorner, {CornerRadius = UDim.new(0, 7)}, 0.25)
             task.wait(0.25)
             Utility:Tween(Button1Stroke, {Thickness = 1}, 0.25)
             Utility:Tween(Button2Stroke, {Thickness = 1}, 0.25)
@@ -1161,7 +1161,7 @@ function Library:CreateWindow(HubName, GameName, IntroText, IntroIcon, ImprovePe
             Size = UDim2.new(0, 0, 0, 0)
         }, {
             Utility:Create('UICorner', {
-                CornerRadius = UDim.new(0, 15),
+                CornerRadius = UDim.new(0, 7),
                 Name = 'MainCorner'
             }),
             Utility:Create('TextLabel', {
@@ -1230,7 +1230,7 @@ function Library:CreateWindow(HubName, GameName, IntroText, IntroIcon, ImprovePe
         BackgroundColor3 = Theme.BackgroundColor
     }, {
         Utility:Create('UICorner', {
-            CornerRadius = UDim.new(0, 15),
+            CornerRadius = UDim.new(0, 7),
             Parent = Main,
             Name = 'PromptHolderCorner'
         })
@@ -1245,7 +1245,7 @@ function Library:CreateWindow(HubName, GameName, IntroText, IntroIcon, ImprovePe
         BackgroundColor3 = Theme.BackgroundColor
     }, {
         Utility:Create('UICorner', {
-            CornerRadius = UDim.new(0, 15),
+            CornerRadius = UDim.new(0, 7),
             Name = 'Filler1Corner'
         })
     })
@@ -1259,7 +1259,7 @@ function Library:CreateWindow(HubName, GameName, IntroText, IntroIcon, ImprovePe
         BackgroundColor3 = Theme.BackgroundColor
     }, {
         Utility:Create('UICorner', {
-            CornerRadius = UDim.new(0, 15),
+            CornerRadius = UDim.new(0, 7),
             Name = 'Filler2Corner'
         })
     })
@@ -1271,7 +1271,7 @@ function Library:CreateWindow(HubName, GameName, IntroText, IntroIcon, ImprovePe
         Size = UDim2.new(0, 170, 0, 375)
     }, {
         Utility:Create('UICorner', {
-            CornerRadius = UDim.new(0, 15),
+            CornerRadius = UDim.new(0, 7),
             Name = 'SidebarCorner'
         }),
         Utility:Create('Frame', {
@@ -1283,7 +1283,7 @@ function Library:CreateWindow(HubName, GameName, IntroText, IntroIcon, ImprovePe
             BackgroundColor3 = Theme.SidebarColor
         }, {
             Utility:Create('UICorner', {
-                CornerRadius = UDim.new(0, 15),
+                CornerRadius = UDim.new(0, 7),
                 Name = 'NamesBehindCorner'
             })
         }),
@@ -1296,7 +1296,7 @@ function Library:CreateWindow(HubName, GameName, IntroText, IntroIcon, ImprovePe
             BackgroundColor3 = Theme.SidebarColor
         }, {
             Utility:Create('UICorner', {
-                CornerRadius = UDim.new(0, 15),
+                CornerRadius = UDim.new(0, 7),
                 Name = 'Filler3Corner'
             })
         }),
@@ -1825,7 +1825,7 @@ function Library:CreateWindow(HubName, GameName, IntroText, IntroIcon, ImprovePe
                 }),
                 Utility:Create('UICorner', {
                     Name = 'SectionCorner',
-                    CornerRadius = UDim.new(0, 15)
+                    CornerRadius = UDim.new(0, 7)
                 }),
                 Utility:Create('UIListLayout', {
                     Name = Name..'ListLayout',
@@ -1888,7 +1888,7 @@ function Library:CreateWindow(HubName, GameName, IntroText, IntroIcon, ImprovePe
                     Size = UDim2.new(0, 410, 0, 30)
                 }, {
                     Utility:Create('UICorner', {
-                        CornerRadius = UDim.new(0, 15),
+                        CornerRadius = UDim.new(0, 7),
                         Name = LabelText..'LabelHolderCorner'
                     }),
                     Utility:Create('UIStroke', {
@@ -1910,7 +1910,7 @@ function Library:CreateWindow(HubName, GameName, IntroText, IntroIcon, ImprovePe
                         TextXAlignment = Enum.TextXAlignment.Left
                     }, {
                         Utility:Create('UICorner', {
-                            CornerRadius = UDim.new(0, 15),
+                            CornerRadius = UDim.new(0, 7),
                             Name = LabelText..'LabelCorner'
                         }),
                         Utility:Create('UIPadding', {
@@ -1957,7 +1957,7 @@ function Library:CreateWindow(HubName, GameName, IntroText, IntroIcon, ImprovePe
                     Size = UDim2.new(0, 410, 0, 37)
                 }, {
                     Utility:Create('UICorner', {
-                        CornerRadius = UDim.new(0, 15),
+                        CornerRadius = UDim.new(0, 7),
                         Name = Title..'ParagraphHolderCorner'
                     }),
                     Utility:Create('UIStroke', {
@@ -1980,7 +1980,7 @@ function Library:CreateWindow(HubName, GameName, IntroText, IntroIcon, ImprovePe
                         TextXAlignment = Enum.TextXAlignment.Left
                     }, {
                         Utility:Create('UICorner', {
-                            CornerRadius = UDim.new(0, 15),
+                            CornerRadius = UDim.new(0, 7),
                             Name = Title..'ParagraphTitleCorner'
                         }),
                         Utility:Create('UIPadding', {
@@ -2002,7 +2002,7 @@ function Library:CreateWindow(HubName, GameName, IntroText, IntroIcon, ImprovePe
                         TextXAlignment = Enum.TextXAlignment.Left
                     }, {
                         Utility:Create('UICorner', {
-                            CornerRadius = UDim.new(0, 15),
+                            CornerRadius = UDim.new(0, 7),
                             Name = Title..'ParagraphContentCorner'
                         }),
                         Utility:Create('UIPadding', {
@@ -2082,7 +2082,7 @@ function Library:CreateWindow(HubName, GameName, IntroText, IntroIcon, ImprovePe
                     Size = UDim2.new(0, 410, 0, 30)
                 }, {
                     Utility:Create('UICorner', {
-                        CornerRadius = UDim.new(0, 15),
+                        CornerRadius = UDim.new(0, 7),
                         Name = Name..'ButtonHolderCorner'
                     }),
                     Utility:Create('UIStroke', {
@@ -2104,7 +2104,7 @@ function Library:CreateWindow(HubName, GameName, IntroText, IntroIcon, ImprovePe
                         Text = Name
                     }, {
                         Utility:Create('UICorner', {
-                            CornerRadius = UDim.new(0, 15),
+                            CornerRadius = UDim.new(0, 7),
                             Name = 'ButtonCorner'
                         }),
                         Utility:Create('UIPadding', {
@@ -2190,7 +2190,7 @@ function Library:CreateWindow(HubName, GameName, IntroText, IntroIcon, ImprovePe
                     Size = UDim2.new(0, 410, 0, 50)
                 }, {
                     Utility:Create('UICorner', {
-                        CornerRadius = UDim.new(0, 15),
+                        CornerRadius = UDim.new(0, 7),
                         Name = Name..'SliderHolderCorner'
                     }),
                     Utility:Create('UIStroke', {
@@ -2212,7 +2212,7 @@ function Library:CreateWindow(HubName, GameName, IntroText, IntroIcon, ImprovePe
                         TextXAlignment = Enum.TextXAlignment.Left
                     }, {
                         Utility:Create('UICorner', {
-                            CornerRadius = UDim.new(0, 15),
+                            CornerRadius = UDim.new(0, 7),
                             Name = Name..'SliderTextCorner'
                         }),
                         Utility:Create('UIPadding', {
@@ -2237,7 +2237,7 @@ function Library:CreateWindow(HubName, GameName, IntroText, IntroIcon, ImprovePe
                             Thickness = 1
                         }),
                         Utility:Create('UICorner', {
-                            CornerRadius = UDim.new(0, 15),
+                            CornerRadius = UDim.new(0, 7),
                             Name = Name..'SliderButtonCorner'
                         }),
                         Utility:Create('Frame', {
@@ -2247,7 +2247,7 @@ function Library:CreateWindow(HubName, GameName, IntroText, IntroIcon, ImprovePe
                             BorderSizePixel = 0
                         }, {
                             Utility:Create('UICorner', {
-                                CornerRadius = UDim.new(0, 15),
+                                CornerRadius = UDim.new(0, 7),
                                 Name = Name..'SliderTrailCorner'
                             })
                         })
@@ -2265,7 +2265,7 @@ function Library:CreateWindow(HubName, GameName, IntroText, IntroIcon, ImprovePe
                         TextXAlignment = Enum.TextXAlignment.Right
                     }, {
                         Utility:Create('UICorner', {
-                            CornerRadius = UDim.new(0, 15),
+                            CornerRadius = UDim.new(0, 7),
                             Name = Name..'SliderNumberTextCorner'
                         }),
                         Utility:Create('UIPadding', {
@@ -2379,7 +2379,7 @@ function Library:CreateWindow(HubName, GameName, IntroText, IntroIcon, ImprovePe
                     Size = UDim2.new(0, 410, 0, 40)
                 }, {
                     Utility:Create('UICorner', {
-                        CornerRadius = UDim.new(0, 15),
+                        CornerRadius = UDim.new(0, 7),
                         Name = Name..'TextboxHolderCorner'
                     }),
                     Utility:Create('UIStroke', {
@@ -2428,7 +2428,7 @@ function Library:CreateWindow(HubName, GameName, IntroText, IntroIcon, ImprovePe
                             Thickness = 1
                         }),
                         Utility:Create('UICorner', {
-                            CornerRadius = UDim.new(0, 15),
+                            CornerRadius = UDim.new(0, 7),
                             Name = Name..'TextboxCorner'
                         })
                     })
@@ -2531,7 +2531,7 @@ function Library:CreateWindow(HubName, GameName, IntroText, IntroIcon, ImprovePe
                     Size = UDim2.new(0, 410, 0, 40)
                 }, {
                     Utility:Create('UICorner', {
-                        CornerRadius = UDim.new(0, 15),
+                        CornerRadius = UDim.new(0, 7),
                         Name = Name..'KeybindHolderCorner'
                     }),
                     Utility:Create('UIStroke', {
@@ -2581,7 +2581,7 @@ function Library:CreateWindow(HubName, GameName, IntroText, IntroIcon, ImprovePe
                             Thickness = 1
                         }),
                         Utility:Create('UICorner', {
-                            CornerRadius = UDim.new(0, 15),
+                            CornerRadius = UDim.new(0, 7),
                             Name = Name..'KeybindCorner'
                         })
                     })
@@ -2693,7 +2693,7 @@ function Library:CreateWindow(HubName, GameName, IntroText, IntroIcon, ImprovePe
                     Size = UDim2.new(0, 410, 0, 40)
                 }, {
                     Utility:Create('UICorner', {
-                        CornerRadius = UDim.new(0, 15),
+                        CornerRadius = UDim.new(0, 7),
                         Name = Name..'ToggleHolderCorner'
                     }),
                     Utility:Create('UIStroke', {
@@ -2762,7 +2762,7 @@ function Library:CreateWindow(HubName, GameName, IntroText, IntroIcon, ImprovePe
                         TextSize = 14
                     }, {
                         Utility:Create('UICorner', {
-                            CornerRadius = UDim.new(0, 15),
+                            CornerRadius = UDim.new(0, 7),
                             Name = Name..'ToggleButtonCorner'
                         })
                     })
@@ -2890,7 +2890,7 @@ function Library:CreateWindow(HubName, GameName, IntroText, IntroIcon, ImprovePe
                     Size = UDim2.new(0, 410, 0, 40)
                 }, {
                     Utility:Create('UICorner', {
-                        CornerRadius = UDim.new(0, 15),
+                        CornerRadius = UDim.new(0, 7),
                         Name = Name..'DropdownHolderCorner'
                     }),
                     Utility:Create('UIStroke', {
@@ -2943,7 +2943,7 @@ function Library:CreateWindow(HubName, GameName, IntroText, IntroIcon, ImprovePe
                         TextXAlignment = Enum.TextXAlignment.Right
                     }, {
                         Utility:Create('UICorner', {
-                            CornerRadius = UDim.new(0, 15),
+                            CornerRadius = UDim.new(0, 7),
                             Name = Name..'DropdownSelectedTextCorner'
                         }),
                         Utility:Create('UIPadding', {
@@ -2974,7 +2974,7 @@ function Library:CreateWindow(HubName, GameName, IntroText, IntroIcon, ImprovePe
                             SortOrder = Enum.SortOrder.LayoutOrder
                         }),
                         Utility:Create('UICorner', {
-                            CornerRadius = UDim.new(0, 15),
+                            CornerRadius = UDim.new(0, 7),
                             Name = Name..'DropdownListCorner'
                         })
                     }),
@@ -2991,7 +2991,7 @@ function Library:CreateWindow(HubName, GameName, IntroText, IntroIcon, ImprovePe
                         TextSize = 14
                     }, {
                         Utility:Create('UICorner', {
-                            CornerRadius = UDim.new(0, 15),
+                            CornerRadius = UDim.new(0, 7),
                             Name = Name..'DropdownButtonCorner'
                         })
                     })
@@ -3108,7 +3108,7 @@ function Library:CreateWindow(HubName, GameName, IntroText, IntroIcon, ImprovePe
                             PaddingLeft = UDim.new(0, 7)
                         }),
                         Utility:Create('UICorner', {
-                            CornerRadius = UDim.new(0, 15),
+                            CornerRadius = UDim.new(0, 7),
                             Name = Item..'OptionButtonCorner'
                         })
                     })
@@ -3257,7 +3257,7 @@ function Library:CreateWindow(HubName, GameName, IntroText, IntroIcon, ImprovePe
                                 PaddingLeft = UDim.new(0, 7)
                             }),
                             Utility:Create('UICorner', {
-                                CornerRadius = UDim.new(0, 15),
+                                CornerRadius = UDim.new(0, 7),
                                 Name = Item..'OptionButtonCorner'
                             })
                         })
@@ -3349,7 +3349,7 @@ function Library:CreateWindow(HubName, GameName, IntroText, IntroIcon, ImprovePe
                     Size = UDim2.new(0, 410, 0, 40)
                 }, {
                     Utility:Create('UICorner', {
-                        CornerRadius = UDim.new(0, 15),
+                        CornerRadius = UDim.new(0, 7),
                         Name = Name..'ColorpickerHolderCorner'
                     }),
                     Utility:Create('UIStroke', {
@@ -3388,7 +3388,7 @@ function Library:CreateWindow(HubName, GameName, IntroText, IntroIcon, ImprovePe
                         TextSize = 14
                     }, {
                         Utility:Create('UICorner', {
-                            CornerRadius = UDim.new(0, 15),
+                            CornerRadius = UDim.new(0, 7),
                             Name = Name..'ColorpickerButtonCorner'
                         })
                     }),
@@ -3401,7 +3401,7 @@ function Library:CreateWindow(HubName, GameName, IntroText, IntroIcon, ImprovePe
                         Visible = false
                     }, {
                         Utility:Create('UICorner', {
-                            CornerRadius = UDim.new(0, 15),
+                            CornerRadius = UDim.new(0, 7),
                             Name = Name..'ColorpickerDropdownCorner'
                         }),
                         Utility:Create('UIStroke', {
@@ -3419,7 +3419,7 @@ function Library:CreateWindow(HubName, GameName, IntroText, IntroIcon, ImprovePe
                             Image = 'rbxassetid://6523286724'
                         }, {
                             Utility:Create('UICorner', {
-                                CornerRadius = UDim.new(0, 15),
+                                CornerRadius = UDim.new(0, 7),
                                 Name = Name..'RGBPickerCorner'
                             }),
                             Utility:Create('ImageLabel', {
@@ -3449,7 +3449,7 @@ function Library:CreateWindow(HubName, GameName, IntroText, IntroIcon, ImprovePe
                             Image = 'rbxassetid://6523291212'
                         }, {
                             Utility:Create('UICorner', {
-                                CornerRadius = UDim.new(0, 15),
+                                CornerRadius = UDim.new(0, 7),
                                 Name = Name..'DarknessPickerCorner'
                             }),
                             Utility:Create('ImageLabel', {
@@ -3479,7 +3479,7 @@ function Library:CreateWindow(HubName, GameName, IntroText, IntroIcon, ImprovePe
                         Size = UDim2.new(0, 25, 0, 25)
                     }, {
                         Utility:Create('UICorner', {
-                            CornerRadius = UDim.new(0, 15),
+                            CornerRadius = UDim.new(0, 7),
                             Name = Name..'ColorpickerPreviewCorner'
                         })
                     })
@@ -3704,7 +3704,7 @@ function Library:CreateWindow(HubName, GameName, IntroText, IntroIcon, ImprovePe
                     Size = UDim2.new(0, 410, 0, 40)
                 }, {
                     Utility:Create('UICorner', {
-                        CornerRadius = UDim.new(0, 15),
+                        CornerRadius = UDim.new(0, 7),
                         Name = Name..'ImageHolderCorner'
                     }),
                     Utility:Create('UIStroke', {
@@ -3790,7 +3790,7 @@ function Library:CreateWindow(HubName, GameName, IntroText, IntroIcon, ImprovePe
                         TextSize = 14
                     }, {
                         Utility:Create('UICorner', {
-                            CornerRadius = UDim.new(0, 15),
+                            CornerRadius = UDim.new(0, 7),
                             Name = Name..'ImageButtonCorner'
                         })
                     })
