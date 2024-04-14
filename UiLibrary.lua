@@ -134,7 +134,7 @@ local Themes = {
         NotificationUIStrokeColor = Color3.fromRGB(67, 75, 94)
     },
     ['Purple'] = {
-        BackgroundColor = Color3.fromRGB(30, 30, 45),
+        BackgroundColor = Color3.fromRGB(28, 36, 51),
         SidebarColor = Color3.fromRGB(40, 40, 60),
         PrimaryTextColor = Color3.fromRGB(255, 255, 255),
         SecondaryTextColor = Color3.fromRGB(135, 135, 135),
