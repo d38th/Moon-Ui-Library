@@ -204,20 +204,6 @@ local Themes = {
         NotificationUIStrokeColor = Color3.fromRGB(50, 50, 50)
     },
     ['Kiriot'] = {
-        BackgroundColor = Color3.fromRGB(35, 35, 35),
-        SidebarColor = Color3.fromRGB(30, 30, 30),
-        PrimaryTextColor = Color3.fromRGB(255, 255, 255),
-        SecondaryTextColor = Color3.fromRGB(135, 135, 135),
-        UIStrokeColor = Color3.fromRGB(255, 170, 60),
-        PrimaryElementColor = Color3.fromRGB(30, 30, 30),
-        SecondaryElementColor = Color3.fromRGB(50, 50, 50),
-        OtherElementColor = Color3.fromRGB(25, 25, 25),
-        ScrollBarColor = Color3.fromRGB(125, 125, 125),
-        PromptColor = Color3.fromRGB(40, 40, 40),
-        NotificationColor = Color3.fromRGB(25, 25, 25),
-        NotificationUIStrokeColor = Color3.fromRGB(255, 170, 60)
-    },
-    ['Vape'] = {
         BackgroundColor = Color3.fromRGB(28, 36, 51),
         SidebarColor = Color3.fromRGB(25, 29, 43),
         PrimaryTextColor = Color3.fromRGB(255, 255, 255),
