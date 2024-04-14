@@ -217,6 +217,20 @@ local Themes = {
         NotificationColor = Color3.fromRGB(25, 25, 25),
         NotificationUIStrokeColor = Color3.fromRGB(255, 170, 60)
     },
+    ['Vape'] = {
+        BackgroundColor = Color3.fromRGB(28, 36, 51),
+        SidebarColor = Color3.fromRGB(25, 29, 43),
+        PrimaryTextColor = Color3.fromRGB(255, 255, 255),
+        SecondaryTextColor = Color3.fromRGB(135, 135, 135),
+        UIStrokeColor = Color3.fromRGB(22, 25, 36),
+        PrimaryElementColor = Color3.fromRGB(23, 26, 39),
+        SecondaryElementColor = Color3.fromRGB(23, 26, 39),
+        OtherElementColor = Color3.fromRGB(23, 26, 39),
+        ScrollBarColor = Color3.fromRGB(77, 51, 102),
+        PromptColor = Color3.fromRGB(21, 22, 33),
+        NotificationColor = Color3.fromRGB(25, 25, 25),
+        NotificationUIStrokeColor = Color3.fromRGB(28, 36, 51)
+    },
 }
 
 -- // Utility Functions
