@@ -204,6 +204,20 @@ local Themes = {
         NotificationUIStrokeColor = Color3.fromRGB(50, 50, 50)
     },
     ['Kiriot'] = {
+        BackgroundColor = Color3.fromRGB(35, 35, 35),
+        SidebarColor = Color3.fromRGB(30, 30, 30),
+        PrimaryTextColor = Color3.fromRGB(255, 255, 255),
+        SecondaryTextColor = Color3.fromRGB(135, 135, 135),
+        UIStrokeColor = Color3.fromRGB(255, 170, 60),
+        PrimaryElementColor = Color3.fromRGB(30, 30, 30),
+        SecondaryElementColor = Color3.fromRGB(50, 50, 50),
+        OtherElementColor = Color3.fromRGB(25, 25, 25),
+        ScrollBarColor = Color3.fromRGB(125, 125, 125),
+        PromptColor = Color3.fromRGB(40, 40, 40),
+        NotificationColor = Color3.fromRGB(25, 25, 25),
+        NotificationUIStrokeColor = Color3.fromRGB(255, 170, 60)
+    },
+    ['Vape'] = {
         BackgroundColor = Color3.fromRGB(28, 36, 51),
         SidebarColor = Color3.fromRGB(25, 29, 43),
         PrimaryTextColor = Color3.fromRGB(255, 255, 255),
@@ -1130,6 +1144,8 @@ function Library:CreateWindow(HubName, GameName, IntroText, IntroIcon, ImprovePe
             Theme = Themes['Script-Ware']
         elseif Theme == 'kiriot' then
             Theme = Themes['Kiriot']
+        elseif Theme == 'Vape' then
+            Theme = Themes['Vape']
         end
     end
     local NewTable = {}
@@ -1616,6 +1632,15 @@ function Library:CreateWindow(HubName, GameName, IntroText, IntroIcon, ImprovePe
                     ChangeThemeValue()
                 elseif NewTheme == 'kiriot' then
                     Theme = Themes['Kiriot']
+                    local NewTable = {}
+                    for Index, Value in next, Theme do
+                        NewTable[Index] = Utility:SplitColor(Value)
+                    end
+                    writefile('MoonUILibraryCurrentTheme.json', HttpService:JSONEncode(NewTable))
+                    Config['Theme_4z3s4QrUhfqt703FmiAe'] = HttpService:JSONEncode(NewTable)
+                    ChangeThemeValue()
+                elseif NewTheme == 'Vape' then
+                    Theme = Themes['Vape']
                     local NewTable = {}
                     for Index, Value in next, Theme do
                         NewTable[Index] = Utility:SplitColor(Value)
