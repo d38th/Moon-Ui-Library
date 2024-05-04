@@ -1,6 +1,6 @@
-local Library = loadstring(game:HttpGet('https://github.com/d38th/Moon-Ui-Library/blob/main/UiLibrary.lua'))()
+local Library = loadstring(game:HttpGet('https://raw.githubusercontent.com/d38th/Moon-Ui-Library/main/UiLibrary.lua'))()
 
-local Window = Library:CreateWindow('Moon', --[[Loading Screen Name]] 'Game Name', --[[Game Name]] 'Moon', --[[Script Name]] 'rbxassetid://10618928818', --[[Icon]] false, 'MoonConfigs', --[[Config Name]] 'Moon' --[[Theme]])
+local Window = Library:CreateWindow('Moon', --[[Loading Screen Name]] 'Game Name', --[[Game Name]] 'Moon', --[[Script Name]] 'rbxassetid://10618928818', --[[Icon]] false, 'MoonConfigs', --[[Config Name]] 'Purple' --[[Theme]])
 
 local Tab = Window:CreateTab('Tab', true, 'rbxassetid://3926305904', Vector2.new(524, 44), Vector2.new(36, 36))
 
