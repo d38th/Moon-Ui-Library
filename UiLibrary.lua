@@ -147,6 +147,20 @@ local Themes = {
         NotificationColor = Color3.fromRGB(30, 30, 45),
         NotificationUIStrokeColor = Color3.fromRGB(60, 60, 80)
     },
+        ['Murple'] = {
+        BackgroundColor = Color3.fromRGB(28, 36, 51),
+        SidebarColor = Color3.fromRGB(25, 29, 43),
+        PrimaryTextColor = Color3.fromRGB(255, 255, 255),
+        SecondaryTextColor = Color3.fromRGB(135, 135, 135),
+        UIStrokeColor = Color3.fromRGB(21, 23, 35),
+        PrimaryElementColor = Color3.fromRGB(16, 17, 26),
+        SecondaryElementColor = Color3.fromRGB(16, 17, 26),
+        OtherElementColor = Color3.fromRGB(16, 17, 26),
+        ScrollBarColor = Color3.fromRGB(77, 51, 102),
+        PromptColor = Color3.fromRGB(50, 50, 65),
+        NotificationColor = Color3.fromRGB(30, 30, 45),
+        NotificationUIStrokeColor = Color3.fromRGB(60, 60, 80)
+    },
     ['Sentinel'] = {
         BackgroundColor = Color3.fromRGB(30, 30, 30),
         SidebarColor = Color3.fromRGB(25, 25, 25),
