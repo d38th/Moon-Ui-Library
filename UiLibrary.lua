@@ -1148,6 +1148,8 @@ function Library:CreateWindow(HubName, GameName, IntroText, IntroIcon, ImprovePe
             Theme = Themes['Nordic Light']
         elseif Theme == 'purple' then
             Theme = Themes['Purple']
+        elseif Theme == "murple" then
+            Theme = Themes['Murple']
         elseif Theme == 'sentinel' then
             Theme = Themes['Sentinel']
         elseif Theme == 'synapse x' then
@@ -1602,6 +1604,14 @@ function Library:CreateWindow(HubName, GameName, IntroText, IntroIcon, ImprovePe
                 elseif NewTheme == 'purple' then
                     Theme = Themes['Purple']
                     local NewTable = {}
+                    for Index, Value in next, Theme do
+                        NewTable[Index] = Utility:SplitColor(Value)
+                    end
+                    writefile('MoonUILibraryCurrentTheme.json', HttpService:JSONEncode(NewTable))
+                    Config['Theme_4z3s4QrUhfqt703FmiAe'] = HttpService:JSONEncode(NewTable)
+                    ChangeThemeValue()
+                elseif NewTheme == "murple" then
+                    Theme = Themes['Murple']
                     for Index, Value in next, Theme do
                         NewTable[Index] = Utility:SplitColor(Value)
                     end
