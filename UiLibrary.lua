@@ -395,7 +395,7 @@ do
                         BackgroundTransparency = 1,
                         Position = UDim2.new(0, 0, 0, -1),
                         Size = UDim2.new(0, 300, 0, 30),
-                        Font = Enum.Font.Fredoka-One,
+                        Font = Enum.Font.FredokaOne,
                         Text = Title,
                         TextColor3 = Theme.PrimaryTextColor,
                         TextSize = 16,
@@ -411,7 +411,7 @@ do
                         BackgroundTransparency = 1,
                         Position = UDim2.new(0, 0, 0, 25),
                         Size = UDim2.new(0, 300, 0, 30),
-                        Font = Enum.Font.Fredoka-One,
+                        Font = Enum.Font.FredokaOne,
                         Text = Text,
                         TextWrapped = true,
                         TextColor3 = Theme.SecondaryTextColor,
@@ -429,7 +429,7 @@ do
                 local Holder = CoreGui:FindFirstChild('Moon UI Library | .gg/MoonScripts | Notifications')['Notification'..tostring(Amount)]
                 local TitleObj = Holder['NotificationTitle']
                 local TextObj = Holder['NotificationText']
-                local TextSize = TextService:GetTextSize(Text, 14, Enum.Font.Fredoka-One, Vector2.new(300, math.huge))
+                local TextSize = TextService:GetTextSize(Text, 14, Enum.Font.FredokaOne, Vector2.new(300, math.huge))
                 Holder.Size = UDim2.new(0, 300, 0, TextSize.Y + 30)
                 TextObj.Size = UDim2.new(0, 300, 0, TextSize.Y)
                 if Amount > 1 then
@@ -507,7 +507,7 @@ do
                     AnchorPoint = Vector2.new(0.5, 0),
                     Position = UDim2.new(0.5, 0, 0, 5),
                     Size = UDim2.new(0, 0, 0, 20),
-                    Font = Enum.Font.Fredoka-One,
+                    Font = Enum.Font.FredokaOne,
                     Text = Title,
                     TextColor3 = Theme.PrimaryTextColor,
                     TextSize = 20,
@@ -522,7 +522,7 @@ do
                     AnchorPoint = Vector2.new(0.5, 0),
                     Position = UDim2.new(0.5, 0, 0, 26),
                     Size = UDim2.new(0, 280, 0, 77),
-                    Font = Enum.Font.Fredoka-One,
+                    Font = Enum.Font.FredokaOne,
                     Text = Text,
                     TextColor3 = Theme.SecondaryTextColor,
                     TextSize = 15,
@@ -535,7 +535,7 @@ do
                     BackgroundTransparency = 1,
                     TextTransparency = 1,
                     Text = ButtonText,
-                    Font = Enum.Font.Fredoka-One,
+                    Font = Enum.Font.FredokaOne,
                     TextColor3 = Theme.SecondaryTextColor,
                     TextXAlignment = Enum.TextXAlignment.Center,
                     Position = UDim2.new(0, 10, 0, 110),
@@ -568,7 +568,7 @@ do
             local PromptText = PromptFrame[Title..'PromptText']
             local PromptTitle = PromptFrame[Title..'PromptTitle']
 
-            local TitleTextSize = TextService:GetTextSize(Title, 20, Enum.Font.Fredoka-One, Vector2.new(280, 0))
+            local TitleTextSize = TextService:GetTextSize(Title, 20, Enum.Font.FredokaOne, Vector2.new(280, 0))
             
             Utility:Tween(PromptTitle, {Size = UDim2.new(0, TitleTextSize.X, 0, TitleTextSize.Y)}, 0.25)
 
@@ -644,7 +644,7 @@ do
                     AnchorPoint = Vector2.new(0.5, 0),
                     Position = UDim2.new(0.5, 0, 0, 5),
                     Size = UDim2.new(0, 0, 0, 20),
-                    Font = Enum.Font.Fredoka-One,
+                    Font = Enum.Font.FredokaOne,
                     Text = Title,
                     TextColor3 = Theme.PrimaryTextColor,
                     TextSize = 20,
@@ -659,7 +659,7 @@ do
                     AnchorPoint = Vector2.new(0.5, 0),
                     Position = UDim2.new(0.5, 0, 0, 26),
                     Size = UDim2.new(0, 280, 0, 77),
-                    Font = Enum.Font.Fredoka-One,
+                    Font = Enum.Font.FredokaOne,
                     Text = Text,
                     TextColor3 = Theme.SecondaryTextColor,
                     TextSize = 15,
@@ -672,7 +672,7 @@ do
                     BackgroundTransparency = 1,
                     TextTransparency = 1,
                     Text = ButtonText,
-                    Font = Enum.Font.Fredoka-One,
+                    Font = Enum.Font.FredokaOne,
                     TextColor3 = Theme.SecondaryTextColor,
                     TextXAlignment = Enum.TextXAlignment.Center,
                     Position = UDim2.new(0, 10, 0, 110),
@@ -705,7 +705,7 @@ do
             local PromptText = PromptFrame[Title..'PromptText']
             local PromptTitle = PromptFrame[Title..'PromptTitle']
 
-            local TitleTextSize = TextService:GetTextSize(Title, 20, Enum.Font.Fredoka-One, Vector2.new(280, 0))
+            local TitleTextSize = TextService:GetTextSize(Title, 20, Enum.Font.FredokaOne, Vector2.new(280, 0))
             
             Utility:Tween(PromptTitle, {Size = UDim2.new(0, TitleTextSize.X, 0, TitleTextSize.Y)}, 0.25)
 
@@ -784,7 +784,7 @@ do
                     AnchorPoint = Vector2.new(0.5, 0),
                     Position = UDim2.new(0.5, 0, 0, 5),
                     Size = UDim2.new(0, 0, 0, 20),
-                    Font = Enum.Font.Fredoka-One,
+                    Font = Enum.Font.FredokaOne,
                     Text = Title,
                     TextColor3 = Theme.PrimaryTextColor,
                     TextSize = 20,
@@ -799,7 +799,7 @@ do
                     AnchorPoint = Vector2.new(0.5, 0),
                     Position = UDim2.new(0.5, 0, 0, 26),
                     Size = UDim2.new(0, 280, 0, 77),
-                    Font = Enum.Font.Fredoka-One,
+                    Font = Enum.Font.FredokaOne,
                     Text = Text,
                     TextColor3 = Theme.SecondaryTextColor,
                     TextSize = 15,
@@ -812,7 +812,7 @@ do
                     BackgroundTransparency = 1,
                     TextTransparency = 1,
                     Text = Button1Text,
-                    Font = Enum.Font.Fredoka-One,
+                    Font = Enum.Font.FredokaOne,
                     TextColor3 = Theme.SecondaryTextColor,
                     TextXAlignment = Enum.TextXAlignment.Center,
                     Position = UDim2.new(0, 10, 0, 110),
@@ -841,7 +841,7 @@ do
                     BackgroundTransparency = 1,
                     TextTransparency = 1,
                     Text = Button2Text,
-                    Font = Enum.Font.Fredoka-One,
+                    Font = Enum.Font.FredokaOne,
                     TextColor3 = Theme.SecondaryTextColor,
                     TextXAlignment = Enum.TextXAlignment.Center,
                     Position = UDim2.new(0, 155, 0, 110),
@@ -876,7 +876,7 @@ do
             local PromptText = PromptFrame[Title..'PromptText']
             local PromptTitle = PromptFrame[Title..'PromptTitle']
 
-            local TitleTextSize = TextService:GetTextSize(Title, 20, Enum.Font.Fredoka-One, Vector2.new(280, 0))
+            local TitleTextSize = TextService:GetTextSize(Title, 20, Enum.Font.FredokaOne, Vector2.new(280, 0))
             
             Utility:Tween(PromptTitle, {Size = UDim2.new(0, TitleTextSize.X, 0, TitleTextSize.Y)}, 0.25)
 
@@ -1205,7 +1205,7 @@ function Library:CreateWindow(HubName, GameName, IntroText, IntroIcon, ImprovePe
                 Position = UDim2.new(0.5, 0, 0.5, -40),
                 BorderSizePixel = 0,
                 Size = UDim2.new(0, 170, 0, 20),
-                Font = Enum.Font.Fredoka-One,
+                Font = Enum.Font.FredokaOne,
                 Text = IntroText,
                 TextColor3 = Theme.PrimaryTextColor,
                 TextSize = 18,
@@ -1339,7 +1339,7 @@ function Library:CreateWindow(HubName, GameName, IntroText, IntroIcon, ImprovePe
             Position = UDim2.new(0, 0, 0, 6),
             BorderSizePixel = 0,
             Size = UDim2.new(0, 170, 0, 20),
-            Font = Enum.Font.Fredoka-One,
+            Font = Enum.Font.FredokaOne,
             Text = HubName,
             TextColor3 = Theme.PrimaryTextColor,
             TextSize = 18,
@@ -1358,7 +1358,7 @@ function Library:CreateWindow(HubName, GameName, IntroText, IntroIcon, ImprovePe
             Position = UDim2.new(0, 0, 0, 24),
             BorderSizePixel = 0,
             Size = UDim2.new(0, 170, 0, 20),
-            Font = Enum.Font.Fredoka-One,
+            Font = Enum.Font.FredokaOne,
             Text = GameName,
             TextColor3 = Theme.SecondaryTextColor,
             TextSize = 16,
@@ -1420,15 +1420,15 @@ function Library:CreateWindow(HubName, GameName, IntroText, IntroIcon, ImprovePe
     local TabButtonHolderListLayout = TabButtonHolder['TabButtonHolderListLayout']
     local PromptHolder = Container.Main.PromptHolder
 
-    local HubNameTextSize = TextService:GetTextSize(HubNameObj.Text, 18, Enum.Font.Fredoka-One, Vector2.new(410, math.huge))
-    local GameNameTextSize = TextService:GetTextSize(GameNameObj.Text, 16, Enum.Font.Fredoka-One, Vector2.new(410, math.huge))
+    local HubNameTextSize = TextService:GetTextSize(HubNameObj.Text, 18, Enum.Font.FredokaOne, Vector2.new(410, math.huge))
+    local GameNameTextSize = TextService:GetTextSize(GameNameObj.Text, 16, Enum.Font.FredokaOne, Vector2.new(410, math.huge))
 
     if HubNameTextSize.X >= 165 then
         local NewText = HubNameObj.Text
         local X = 0
         repeat 
             NewText = NewText:sub(0, -2)
-            local HubNameTextSize = TextService:GetTextSize(NewText, 18, Enum.Font.Fredoka-One, Vector2.new(410, math.huge))
+            local HubNameTextSize = TextService:GetTextSize(NewText, 18, Enum.Font.FredokaOne, Vector2.new(410, math.huge))
             X = HubNameTextSize.X
         until X < 165
         for _ = 1, 2 do
@@ -1442,7 +1442,7 @@ function Library:CreateWindow(HubName, GameName, IntroText, IntroIcon, ImprovePe
         local X = 0
         repeat 
             NewText = NewText:sub(0, -2)
-            local GameNameTextSize = TextService:GetTextSize(NewText, 18, Enum.Font.Fredoka-One, Vector2.new(410, math.huge))
+            local GameNameTextSize = TextService:GetTextSize(NewText, 18, Enum.Font.FredokaOne, Vector2.new(410, math.huge))
             X = GameNameTextSize.X
         until X < 175
         for _ = 1, 2 do
@@ -1763,7 +1763,7 @@ function Library:CreateWindow(HubName, GameName, IntroText, IntroIcon, ImprovePe
                 BorderSizePixel = 0,
                 Position = UDim2.new(0, 30, 0, 3),
                 Size = UDim2.new(0, 140, 0, 24),
-                Font = Enum.Font.Fredoka-One,
+                Font = Enum.Font.FredokaOne,
                 Text = TabName,
                 TextColor3 = Theme.PrimaryTextColor,
                 TextSize = 16,
@@ -1861,7 +1861,7 @@ function Library:CreateWindow(HubName, GameName, IntroText, IntroIcon, ImprovePe
                     BackgroundTransparency = 1,
                     BorderSizePixel = 0,
                     Size = UDim2.new(0, 410, 0, 30),
-                    Font = Enum.Font.Fredoka-One,
+                    Font = Enum.Font.FredokaOne,
                     Text = Name,
                     TextColor3 = Theme.SecondaryTextColor,
                     TextSize = 14,
@@ -1952,7 +1952,7 @@ function Library:CreateWindow(HubName, GameName, IntroText, IntroIcon, ImprovePe
                         BackgroundColor3 = Theme.OtherElementColor,
                         BackgroundTransparency = 1,
                         Size = UDim2.new(0, 410, 0, 30),
-                        Font = Enum.Font.Fredoka-One,
+                        Font = Enum.Font.FredokaOne,
                         TextColor3 = Theme.PrimaryTextColor,
                         TextSize = 16,
                         Text = LabelText,
@@ -2022,7 +2022,7 @@ function Library:CreateWindow(HubName, GameName, IntroText, IntroIcon, ImprovePe
                         BackgroundTransparency = 1,
                         Position = UDim2.new(0, 0, 0, 0),
                         Size = UDim2.new(0, 410, 0, 20),
-                        Font = Enum.Font.Fredoka-One,
+                        Font = Enum.Font.FredokaOne,
                         Text = Title,
                         TextColor3 = Theme.PrimaryTextColor,
                         TextSize = 16,
@@ -2043,7 +2043,7 @@ function Library:CreateWindow(HubName, GameName, IntroText, IntroIcon, ImprovePe
                         BackgroundTransparency = 1,
                         Position = UDim2.new(0, 0, 0, 20),
                         Size = UDim2.new(0, 410, 0, 20),
-                        Font = Enum.Font.Fredoka-One,
+                        Font = Enum.Font.FredokaOne,
                         Text = Paragraph,
                         TextColor3 = Theme.SecondaryTextColor,
                         TextWrapped = true,
@@ -2066,7 +2066,7 @@ function Library:CreateWindow(HubName, GameName, IntroText, IntroIcon, ImprovePe
                 local ParagraphContent = Section[Title..'ParagraphHolder'][Title..'ParagraphContent']
                 local ParagraphTitle = Section[Title..'ParagraphHolder'][Title..'ParagraphTitle']
 
-                local TextSizeOld = TextService:GetTextSize(Paragraph, 14, Enum.Font.Fredoka-One, Vector2.new(410, math.huge))
+                local TextSizeOld = TextService:GetTextSize(Paragraph, 14, Enum.Font.FredokaOne, Vector2.new(410, math.huge))
 
                 ParagraphHolder.Size = UDim2.new(0, 410, 0, TextSizeOld.Y + 25)
                 ParagraphContent.Size = UDim2.new(0, 410, 0, TextSizeOld.Y)
@@ -2096,8 +2096,8 @@ function Library:CreateWindow(HubName, GameName, IntroText, IntroIcon, ImprovePe
                     Old = ParagraphContent.Text
                     ParagraphTitle.Text = NewTitle
                     ParagraphContent.Text = NewParagraph
-                    local TextSizeNew = TextService:GetTextSize(ParagraphContent.Text, 14, Enum.Font.Fredoka-One, Vector2.new(410, math.huge))
-                    local TextSizeOld = TextService:GetTextSize(Old, 14, Enum.Font.Fredoka-One, Vector2.new(410, math.huge))
+                    local TextSizeNew = TextService:GetTextSize(ParagraphContent.Text, 14, Enum.Font.FredokaOne, Vector2.new(410, math.huge))
+                    local TextSizeOld = TextService:GetTextSize(Old, 14, Enum.Font.FredokaOne, Vector2.new(410, math.huge))
 
                     if TextSizeNew.Y > 14 and TextSizeNew.Y > TextSizeOld.Y then
                         Tab.CanvasSize = Tab.CanvasSize - UDim2.new(0, 0, 0, TextSizeOld.Y + 5)
@@ -2146,7 +2146,7 @@ function Library:CreateWindow(HubName, GameName, IntroText, IntroIcon, ImprovePe
                         BackgroundColor3 = Theme.PrimaryElementColor,
                         BackgroundTransparency = 1,
                         Size = UDim2.new(0, 410, 0, 30),
-                        Font = Enum.Font.Fredoka-One,
+                        Font = Enum.Font.FredokaOne,
                         TextColor3 = Theme.PrimaryTextColor,
                         TextSize = 16,
                         TextXAlignment = Enum.TextXAlignment.Left,
@@ -2254,7 +2254,7 @@ function Library:CreateWindow(HubName, GameName, IntroText, IntroIcon, ImprovePe
                         BackgroundColor3 = Theme.PrimaryElementColor,
                         BackgroundTransparency = 1,
                         Size = UDim2.new(0, 300, 0, 30),
-                        Font = Enum.Font.Fredoka-One,
+                        Font = Enum.Font.FredokaOne,
                         Text = Name,
                         TextColor3 = Theme.PrimaryTextColor,
                         TextSize = 16,
@@ -2307,7 +2307,7 @@ function Library:CreateWindow(HubName, GameName, IntroText, IntroIcon, ImprovePe
                         BackgroundTransparency = 1,
                         Position = UDim2.new(0, 299, 0, 0),
                         Size = UDim2.new(0, 110, 0, 30),
-                        Font = Enum.Font.Fredoka-One,
+                        Font = Enum.Font.FredokaOne,
                         Text = '0',
                         TextColor3 = Theme.SecondaryTextColor,
                         TextSize = 14,
@@ -2444,7 +2444,7 @@ function Library:CreateWindow(HubName, GameName, IntroText, IntroIcon, ImprovePe
                         BackgroundTransparency = 1,
                         Position = UDim2.new(0, 0, 0, 5),
                         Size = UDim2.new(0, 299, 0, 30),
-                        Font = Enum.Font.Fredoka-One,
+                        Font = Enum.Font.FredokaOne,
                         Text = Name,
                         TextColor3 = Theme.PrimaryTextColor,
                         TextSize = 16,
@@ -2462,7 +2462,7 @@ function Library:CreateWindow(HubName, GameName, IntroText, IntroIcon, ImprovePe
                         AnchorPoint = Vector2.new(1, 0.5),
                         Position = UDim2.new(0, 400, 0, 20),
                         Size = UDim2.new(0, 50, 0, 25),
-                        Font = Enum.Font.Fredoka-One,
+                        Font = Enum.Font.FredokaOne,
                         PlaceholderColor3 = Theme.SecondaryTextColor,
                         Text = Placeholder,
                         TextColor3 = Theme.SecondaryTextColor,
@@ -2511,7 +2511,7 @@ function Library:CreateWindow(HubName, GameName, IntroText, IntroIcon, ImprovePe
                     end)
                 end
 
-                local TextSize = TextService:GetTextSize(Placeholder, 14, Enum.Font.Fredoka-One, Vector2.new(410, 40))
+                local TextSize = TextService:GetTextSize(Placeholder, 14, Enum.Font.FredokaOne, Vector2.new(410, 40))
 
                 if TextSize.X < 50 then 
                     Utility:Tween(Textbox, {Size = UDim2.new(0, 50, 0, 25)}, 0.25)
@@ -2544,7 +2544,7 @@ function Library:CreateWindow(HubName, GameName, IntroText, IntroIcon, ImprovePe
                     if Property == 'Text' then
                         Utility:Tween(Textbox, {TextColor3 = Theme.PrimaryTextColor}, 0.25)
 
-                        local TextSize = TextService:GetTextSize(Textbox.Text, 14, Enum.Font.Fredoka-One, Vector2.new(410, 40))
+                        local TextSize = TextService:GetTextSize(Textbox.Text, 14, Enum.Font.FredokaOne, Vector2.new(410, 40))
 
                         if TextSize.X < 50 then 
                             Utility:Tween(Textbox, {Size = UDim2.new(0, 50, 0, 25)}, 0.25)
@@ -2597,7 +2597,7 @@ function Library:CreateWindow(HubName, GameName, IntroText, IntroIcon, ImprovePe
                         BackgroundTransparency = 1,
                         Position = UDim2.new(0, 0, 0, 5),
                         Size = UDim2.new(0, 352, 0, 30),
-                        Font = Enum.Font.Fredoka-One,
+                        Font = Enum.Font.FredokaOne,
                         Text = Name,
                         TextColor3 = Theme.PrimaryTextColor,
                         TextSize = 16,
@@ -2614,7 +2614,7 @@ function Library:CreateWindow(HubName, GameName, IntroText, IntroIcon, ImprovePe
                         BackgroundColor3 = Theme.SecondaryElementColor,
                         Position = UDim2.new(0, 376, 0, 8),
                         Size = UDim2.new(0, 25, 0, 25),
-                        Font = Enum.Font.Fredoka-One,
+                        Font = Enum.Font.FredokaOne,
                         Text = Current,
                         AnchorPoint = Vector2.new(1, 0.5),
                         Position = UDim2.new(0, 400, 0, 20),
@@ -2665,7 +2665,7 @@ function Library:CreateWindow(HubName, GameName, IntroText, IntroIcon, ImprovePe
                     end)
                 end
 
-                TextSize = TextService:GetTextSize(Current, 14, Enum.Font.Fredoka-One, Vector2.new(410, 40))
+                TextSize = TextService:GetTextSize(Current, 14, Enum.Font.FredokaOne, Vector2.new(410, 40))
                 if TextSize.X < 25 then
                     Utility:Tween(Keybind, {Size = UDim2.new(0, 25, 0, 25)}, 0.25)
                 else 
@@ -2679,7 +2679,7 @@ function Library:CreateWindow(HubName, GameName, IntroText, IntroIcon, ImprovePe
 
                     if Input.KeyCode.Name ~= 'Unknown' then
                         Keybind.Text = Input.KeyCode.Name
-                        TextSize = TextService:GetTextSize(Input.KeyCode.Name, 14, Enum.Font.Fredoka-One, Vector2.new(410, 40))
+                        TextSize = TextService:GetTextSize(Input.KeyCode.Name, 14, Enum.Font.FredokaOne, Vector2.new(410, 40))
                         if TextSize.X < 25 then
                             Utility:Tween(Keybind, {Size = UDim2.new(0, 25, 0, 25)}, 0.25)
                         else 
@@ -2758,7 +2758,7 @@ function Library:CreateWindow(HubName, GameName, IntroText, IntroIcon, ImprovePe
                         BackgroundTransparency = 1,
                         Position = UDim2.new(0, 0, 0, 5),
                         Size = UDim2.new(0, 344, 0, 30),
-                        Font = Enum.Font.Fredoka-One,
+                        Font = Enum.Font.FredokaOne,
                         Text = Name,
                         TextColor3 = Theme.PrimaryTextColor,
                         TextSize = 16,
