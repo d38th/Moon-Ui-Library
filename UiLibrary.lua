@@ -1220,7 +1220,7 @@ function Library:CreateWindow(HubName, GameName, IntroText, IntroEmoji, ImproveP
                 AnchorPoint = Vector2.new(0.5, 0.5),
                 Position = UDim2.new(0.5, 0, 0.5, -40),
                 BorderSizePixel = 0,
-                Size = UDim2.new(0, 170, 0, 20),
+                Size = UDim2.new(0, 300, 0, 300),
                 Font = Enum.Font.FredokaOne,
                 Text = IntroEmoji,
                 TextColor3 = Theme.PrimaryTextColor,
@@ -3988,6 +3988,7 @@ function Library:CreateWindow(HubName, GameName, IntroText, IntroEmoji, ImproveP
     return Tabs
 end
 return Library
+
 
 
 
