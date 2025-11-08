@@ -1116,7 +1116,7 @@ function Library:GetConfigs()
     end
 end 
 
-function Library:CreateWindow(HubName, GameName, IntroText, IntroIcon, ImprovePerformance, ConfigFolder, Theme)
+function Library:CreateWindow(HubName, GameName, IntroText, IntroEmoji, ImprovePerformance, ConfigFolder, Theme)
     local ImprovePerformance = ImprovePerformance or false
     local HasCustom = false
     local HubName = HubName or 'UI Name'
@@ -1212,18 +1212,21 @@ function Library:CreateWindow(HubName, GameName, IntroText, IntroIcon, ImprovePe
                 ZIndex = 2,
                 TextXAlignment = Enum.TextXAlignment.Center
             }),
-            Utility:Create('ImageLabel', {
-                Name = 'IntroImage',
-                BackgroundColor3 = Theme.PrimaryElementColor,
+             Utility:Create('TextLabel', {
+                Name = 'IntroEmoji',
+                BackgroundColor3 = Theme.BackgroundColor,
                 BackgroundTransparency = 1,
-                ImageTransparency = 1,
-                BorderSizePixel = 0,
+                TextTransparency = 1,
                 AnchorPoint = Vector2.new(0.5, 0.5),
-                Position = UDim2.new(0.5, 0, 0.5, 20),
-                ZIndex = 3,
-                Size = UDim2.new(0, 100, 0, 100),
-                Image = IntroIcon,
-                ScaleType = Enum.ScaleType.Fit
+                Position = UDim2.new(0.5, 0, 0.5, -40),
+                BorderSizePixel = 0,
+                Size = UDim2.new(0, 170, 0, 20),
+                Font = Enum.Font.FredokaOne,
+                Text = IntroEmoji,
+                TextColor3 = Theme.PrimaryTextColor,
+                TextSize = 18,
+                ZIndex = 2,
+                TextXAlignment = Enum.TextXAlignment.Center
             })
         }),
     })
@@ -1239,14 +1242,14 @@ function Library:CreateWindow(HubName, GameName, IntroText, IntroIcon, ImprovePe
     task.wait(0.5)
     Utility:Tween(Main['IntroText'], {TextTransparency = 0}, 0.25)
     task.wait(0.5)
-    Utility:Tween(Main['IntroImage'], {ImageTransparency = 0}, 0.25)
+    Utility:Tween(Main['IntroEmoji'], {TextTransparency = 0}, 0.25)
     task.wait(3)
     Utility:Tween(Main['IntroText'], {TextTransparency = 1}, 0.25)
     task.wait(0.5)
-    Utility:Tween(Main['IntroImage'], {ImageTransparency = 1}, 0.25)
+    Utility:Tween(Main['IntroEmoji'], {TextTransparency = 1}, 0.25)
     task.wait(0.5)
     Main['IntroText']:Destroy()
-    Main['IntroImage']:Destroy()
+    Main['IntroEmoji']:Destroy()
     
     Utility:Create('Frame', {
         Name = 'PromptHolder',
@@ -3985,3 +3988,4 @@ function Library:CreateWindow(HubName, GameName, IntroText, IntroIcon, ImprovePe
     return Tabs
 end
 return Library
+
