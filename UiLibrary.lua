@@ -1116,7 +1116,7 @@ function Library:GetConfigs()
     end
 end 
 
-function Library:CreateWindow(HubName, GameName, IntroText, IntroIcon, ImprovePerformance, ConfigFolder, Theme)
+function Library:CreateWindow(HubName, GameName, IntroLabel, IntroText, IntroIcon, ImprovePerformance, ConfigFolder, Theme)
     local ImprovePerformance = ImprovePerformance or false
     local HasCustom = false
     local HubName = HubName or 'UI Name'
@@ -1197,7 +1197,7 @@ function Library:CreateWindow(HubName, GameName, IntroText, IntroIcon, ImprovePe
                 Name = 'MainCorner'
             }),
             Utility:Create('TextLabel', {
-                Name = 'IntroText',
+                Name = 'IntroLabel',
                 BackgroundColor3 = Theme.BackgroundColor,
                 BackgroundTransparency = 1,
                 TextTransparency = 1,
@@ -1206,14 +1206,27 @@ function Library:CreateWindow(HubName, GameName, IntroText, IntroIcon, ImprovePe
                 BorderSizePixel = 0,
                 Size = UDim2.new(0, 170, 0, 20),
                 Font = Enum.Font.FredokaOne,
-                Text = IntroText,
+                Text = IntroLabel,
                 TextColor3 = Theme.PrimaryTextColor,
                 TextSize = 18,
                 ZIndex = 2,
                 TextXAlignment = Enum.TextXAlignment.Center
             }),
-             Utility:Create('TextLabel', {
+                Utility:Create('ImageLabel', {
                 Name = 'IntroImage',
+                BackgroundColor3 = Theme.PrimaryElementColor,
+                BackgroundTransparency = 1,
+                ImageTransparency = 1,
+                BorderSizePixel = 0,
+                AnchorPoint = Vector2.new(0.5, 0.5),
+                Position = UDim2.new(0.5, 0, 0.5, 20),
+                ZIndex = 3,
+                Size = UDim2.new(0, 100, 0, 100),
+                Image = IntroIcon,
+                ScaleType = Enum.ScaleType.Fit
+            }),
+             Utility:Create('TextLabel', {
+                Name = 'IntroText',
                 BackgroundColor3 = Theme.BackgroundColor,
                 BackgroundTransparency = 1,
                 TextTransparency = 1,
@@ -1222,10 +1235,10 @@ function Library:CreateWindow(HubName, GameName, IntroText, IntroIcon, ImprovePe
                 BorderSizePixel = 0,
                 Size = UDim2.new(0, 100, 0, 100),
                 Font = Enum.Font.FredokaOne,
-                Text = IntroIcon,
+                Text = IntroText,
                 TextColor3 = Theme.PrimaryTextColor,
                 TextSize = 24,
-                ZIndex = 2,
+                ZIndex = 5,
                 TextXAlignment = Enum.TextXAlignment.Center
             }),
         }),
@@ -3988,6 +4001,7 @@ function Library:CreateWindow(HubName, GameName, IntroText, IntroIcon, ImprovePe
     return Tabs
 end
 return Library
+
 
 
 
