@@ -1116,7 +1116,7 @@ function Library:GetConfigs()
     end
 end 
 
-function Library:CreateWindow(HubName, GameName, IntroLabel, IntroEmoji, IntroIcon, ImprovePerformance, ConfigFolder, Theme)
+function Library:CreateWindow(HubName, GameName, IntroText, IntroIcon, ImprovePerformance, ConfigFolder, Theme)
     local ImprovePerformance = ImprovePerformance or false
     local HasCustom = false
     local HubName = HubName or 'UI Name'
@@ -1197,7 +1197,7 @@ function Library:CreateWindow(HubName, GameName, IntroLabel, IntroEmoji, IntroIc
                 Name = 'MainCorner'
             }),
             Utility:Create('TextLabel', {
-                Name = 'IntroLabel',
+                Name = 'IntroText',
                 BackgroundColor3 = Theme.BackgroundColor,
                 BackgroundTransparency = 1,
                 TextTransparency = 1,
@@ -1206,7 +1206,7 @@ function Library:CreateWindow(HubName, GameName, IntroLabel, IntroEmoji, IntroIc
                 BorderSizePixel = 0,
                 Size = UDim2.new(0, 170, 0, 20),
                 Font = Enum.Font.FredokaOne,
-                Text = IntroLabel,
+                Text = IntroText,
                 TextColor3 = Theme.PrimaryTextColor,
                 TextSize = 18,
                 ZIndex = 2,
@@ -1224,23 +1224,7 @@ function Library:CreateWindow(HubName, GameName, IntroLabel, IntroEmoji, IntroIc
                 Size = UDim2.new(0, 100, 0, 100),
                 Image = IntroIcon,
                 ScaleType = Enum.ScaleType.Fit
-            }),
-             Utility:Create('TextLabel', {
-                Name = 'IntroEmoji',
-                BackgroundColor3 = Theme.BackgroundColor,
-                BackgroundTransparency = 1,
-                TextTransparency = 1,
-                AnchorPoint = Vector2.new(0.5, 0.5),
-                Position = UDim2.new(0.5, 0, 0.5, 20),
-                BorderSizePixel = 0,
-                Size = UDim2.new(0, 100, 0, 100),
-                Font = Enum.Font.FredokaOne,
-                Text = IntroEmoji,
-                TextColor3 = Theme.PrimaryTextColor,
-                TextSize = 32,
-                ZIndex = 5,
-                TextXAlignment = Enum.TextXAlignment.Center
-            }),
+            })
         }),
     })
 
@@ -4001,8 +3985,3 @@ function Library:CreateWindow(HubName, GameName, IntroLabel, IntroEmoji, IntroIc
     return Tabs
 end
 return Library
-
-
-
-
-
