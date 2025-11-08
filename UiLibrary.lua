@@ -1116,7 +1116,7 @@ function Library:GetConfigs()
     end
 end 
 
-function Library:CreateWindow(HubName, GameName, IntroLabel, IntroText, IntroIcon, ImprovePerformance, ConfigFolder, Theme)
+function Library:CreateWindow(HubName, GameName, IntroLabel, IntroEmoji, IntroIcon, ImprovePerformance, ConfigFolder, Theme)
     local ImprovePerformance = ImprovePerformance or false
     local HasCustom = false
     local HubName = HubName or 'UI Name'
@@ -1212,7 +1212,7 @@ function Library:CreateWindow(HubName, GameName, IntroLabel, IntroText, IntroIco
                 ZIndex = 2,
                 TextXAlignment = Enum.TextXAlignment.Center
             }),
-                Utility:Create('ImageLabel', {
+            Utility:Create('ImageLabel', {
                 Name = 'IntroImage',
                 BackgroundColor3 = Theme.PrimaryElementColor,
                 BackgroundTransparency = 1,
@@ -1226,7 +1226,7 @@ function Library:CreateWindow(HubName, GameName, IntroLabel, IntroText, IntroIco
                 ScaleType = Enum.ScaleType.Fit
             }),
              Utility:Create('TextLabel', {
-                Name = 'IntroText',
+                Name = 'IntroEmoji',
                 BackgroundColor3 = Theme.BackgroundColor,
                 BackgroundTransparency = 1,
                 TextTransparency = 1,
@@ -1235,9 +1235,9 @@ function Library:CreateWindow(HubName, GameName, IntroLabel, IntroText, IntroIco
                 BorderSizePixel = 0,
                 Size = UDim2.new(0, 100, 0, 100),
                 Font = Enum.Font.FredokaOne,
-                Text = IntroText,
+                Text = IntroEmoji,
                 TextColor3 = Theme.PrimaryTextColor,
-                TextSize = 24,
+                TextSize = 32,
                 ZIndex = 5,
                 TextXAlignment = Enum.TextXAlignment.Center
             }),
@@ -4001,6 +4001,7 @@ function Library:CreateWindow(HubName, GameName, IntroLabel, IntroText, IntroIco
     return Tabs
 end
 return Library
+
 
 
 
