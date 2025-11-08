@@ -1212,19 +1212,22 @@ function Library:CreateWindow(HubName, GameName, IntroText, IntroIcon, ImprovePe
                 ZIndex = 2,
                 TextXAlignment = Enum.TextXAlignment.Center
             }),
-            Utility:Create('ImageLabel', {
-                Name = 'IntroImage',
-                BackgroundColor3 = Theme.PrimaryElementColor,
+             Utility:Create('TextLabel', {
+                Name = 'IntroText',
+                BackgroundColor3 = Theme.BackgroundColor,
                 BackgroundTransparency = 1,
-                ImageTransparency = 1,
-                BorderSizePixel = 0,
+                TextTransparency = 1,
                 AnchorPoint = Vector2.new(0.5, 0.5),
                 Position = UDim2.new(0.5, 0, 0.5, 20),
-                ZIndex = 3,
+                BorderSizePixel = 0,
                 Size = UDim2.new(0, 100, 0, 100),
-                Image = IntroIcon,
-                ScaleType = Enum.ScaleType.Fit
-            })
+                Font = Enum.Font.FredokaOne,
+                Text = IntroIcon,
+                TextColor3 = Theme.PrimaryTextColor,
+                TextSize = 24,
+                ZIndex = 2,
+                TextXAlignment = Enum.TextXAlignment.Center
+            }),
         }),
     })
 
@@ -3985,3 +3988,4 @@ function Library:CreateWindow(HubName, GameName, IntroText, IntroIcon, ImprovePe
     return Tabs
 end
 return Library
+
