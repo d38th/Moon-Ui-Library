@@ -1202,7 +1202,7 @@ function Library:CreateWindow(HubName, GameName, IntroText, IntroEmoji, ImproveP
                 BackgroundTransparency = 1,
                 TextTransparency = 1,
                 AnchorPoint = Vector2.new(0.5, 0.5),
-                Position = UDim2.new(0.5, 0, 0.5, -40),
+                Position = UDim2.new(0.5, 0, 0.5, -90),
                 BorderSizePixel = 0,
                 Size = UDim2.new(0, 170, 0, 20),
                 Font = Enum.Font.FredokaOne,
@@ -1224,7 +1224,7 @@ function Library:CreateWindow(HubName, GameName, IntroText, IntroEmoji, ImproveP
                 Font = Enum.Font.FredokaOne,
                 Text = IntroEmoji,
                 TextColor3 = Theme.PrimaryTextColor,
-                TextSize = 35,
+                TextSize = 75,
                 ZIndex = 5,
                 TextXAlignment = Enum.TextXAlignment.Center
             })
@@ -3988,5 +3988,6 @@ function Library:CreateWindow(HubName, GameName, IntroText, IntroEmoji, ImproveP
     return Tabs
 end
 return Library
+
 
 
