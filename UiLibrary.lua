@@ -1213,7 +1213,7 @@ function Library:CreateWindow(HubName, GameName, IntroText, IntroIcon, ImprovePe
                 TextXAlignment = Enum.TextXAlignment.Center
             }),
              Utility:Create('TextLabel', {
-                Name = 'IntroIcon',
+                Name = 'IntroImage',
                 BackgroundColor3 = Theme.BackgroundColor,
                 BackgroundTransparency = 1,
                 TextTransparency = 1,
@@ -3988,5 +3988,6 @@ function Library:CreateWindow(HubName, GameName, IntroText, IntroIcon, ImprovePe
     return Tabs
 end
 return Library
+
 
 
