@@ -1224,8 +1224,8 @@ function Library:CreateWindow(HubName, GameName, IntroText, IntroEmoji, ImproveP
                 Font = Enum.Font.FredokaOne,
                 Text = IntroEmoji,
                 TextColor3 = Theme.PrimaryTextColor,
-                TextSize = 18,
-                ZIndex = 2,
+                TextSize = 35,
+                ZIndex = 5,
                 TextXAlignment = Enum.TextXAlignment.Center
             })
         }),
@@ -3988,4 +3988,5 @@ function Library:CreateWindow(HubName, GameName, IntroText, IntroEmoji, ImproveP
     return Tabs
 end
 return Library
+
 
